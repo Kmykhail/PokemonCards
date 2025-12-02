@@ -10,7 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.kote.obrio.data.cache.ImageMemoryCache
-import com.kote.obrio.data.navigation.Navigraph
+import com.kote.obrio.navigation.NaviGraph
 import com.kote.obrio.ui.theme.ObrioTheme
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ObrioTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Navigraph(
+                    NaviGraph(
                         navController = rememberNavController(),
                         modifier = Modifier
                             .padding(innerPadding)
@@ -34,10 +34,5 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        ImageMemoryCache.clear()
     }
 }

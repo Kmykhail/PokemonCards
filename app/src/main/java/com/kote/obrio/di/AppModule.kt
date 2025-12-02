@@ -1,6 +1,10 @@
 package com.kote.obrio.di
 
 import com.kote.obrio.data.api.PokemonApiService
+import com.kote.obrio.data.repository.ImageRepositoryImpl
+import com.kote.obrio.data.repository.PokemonRepositoryImp
+import com.kote.obrio.domain.ImageRepository
+import com.kote.obrio.domain.PokemonRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -35,5 +39,17 @@ object AppModule {
     @Singleton
     fun providePokemonApiService(retrofit: Retrofit): PokemonApiService {
         return retrofit.create(PokemonApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun providePokemonRepository(pokemonApiService: PokemonApiService) : PokemonRepository {
+        return PokemonRepositoryImp(pokemonApiService)
+    }
+
+    @Provides
+    @Singleton
+    fun provideImageRepository(): ImageRepository {
+        return ImageRepositoryImpl()
     }
 }
