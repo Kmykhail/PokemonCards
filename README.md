@@ -11,6 +11,10 @@ An Android application built with Jetpack Compose that displays a list of Pokém
 - **Delete**: Remove Pokémon from the list
 - **Modern UI**: Built with Material Design 3 and Jetpack Compose
 
+## Screenshot
+
+![Pokemon Details Screen showing types, abilities, and base stats](/home/kostiantyn/.gemini/antigravity/brain/ee43ed68-056d-49b4-a7f6-6b1e701bc92c/pokemon_screenshot.png)
+
 ## Tech Stack
 
 ### Core Technologies
