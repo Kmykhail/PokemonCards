@@ -13,7 +13,8 @@ An Android application built with Jetpack Compose that displays a list of Pokém
 
 ## Screenshot
 
-![Pokemon Details Screen showing types, abilities, and base stats](/home/kostiantyn/.gemini/antigravity/brain/ee43ed68-056d-49b4-a7f6-6b1e701bc92c/pokemon_screenshot.png)
+<img width="333" height="639" alt="Screenshot from 2025-12-04 17-34-10" src="https://github.com/user-attachments/assets/b572f085-d247-4a34-867f-e4c3626468a2" /> <img width="333" height="639" alt="Screenshot from 2025-12-04 17-28-12" src="https://github.com/user-attachments/assets/1d9350c3-c376-4bbf-894d-82b45c0d2f01" />
+
 
 ## Tech Stack
 
